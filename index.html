@@ -2,82 +2,287 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-COMPATIBLE" content=""IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Simplified</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Anna's</title>
+    <link rel="stylesheet" href="./styles.css">
+<script src="https://kit.fontawesome.com/05458313d2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section>
-        <nav>
-            <img src="./assets/FES.svg" class="logo" alt="FES logo">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#Discord">Discord</a></li>
-                <li><a href="#Contact">Contact</a></li>
+<section id="about me">
+    </nav>
+    <div class="personal__logo">Anna Grun</div>
+    <ul class="nav__link--list">
+        <li>
+            <a href="" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+            ">Languages</a>
+        </li>
+        <li>
+            <a href="" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+            ">Project</a>
+        </li>
+        <li></li>
+        <a href="" class="
+            nav__link--anchor
+            nav__link--anchor-primary
+            ">Contact</a>
+            <li>
             </ul>
         </nav>
-        <header>
-            <div class="row">
-                <div CLASS="home__description"
-                <h1>Best place to learn front-end</h1>
-                <p class="subheader">Go from being an absolute beginner to a pro with a simplified process.</p>
-                <button class="home__description--button">Start Now</button>
-            </div>
-            <div>
-                <figure>
-                    <img src="./assets/laptop.svg" alt="Home page image">
-                </figure>
-            </div>
-        </header>
-    </section>
-
-    <main>
-        <section id="about">
-            <h2>About</h2>
-            <div class="section_description">
-                <p class="section__description--para">We are a community of learners who are passionate about front-end development.</p>
-                <p>Keep learning and never stop</p>
-                <p>CHALLENGE YOURSELF TO LEARN NEW THINGS EVERYDAY</p>
-            </div>
-            <figure class="about__img--wrapper">
-                <img src="./assets/about.svg" alt="About image">
+        <div class="flex flex-1">
+            <div class="about-me__info row">
+            <div class="about-me__info--container">
+                <figure class="about-me__picture--mask">
+                    <img src="https://scontent-hou1-1.xx.fbcdn.net/v/t39.30808-6/486465074_3716560248595999_446692669170330433_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=eRgmNrY6sD4Q7kNvwFrWkze&_nc_oc=AdpSmACHEL4dssmuXv7vACF3_06I-sum7BLbLXKlIxK7LKKki7WrjzOhkwrprdG_6AabV6kNOJWaoV-dzPXzVpAf&_nc_zt=23&_nc_ht=scontent-hou1-1.xx&_nc_gid=M7v1yflQ23bTBA_gHl-v5A&_nc_ss=7c2a8&oh=00_Af4g8MZdYjpYdjshutY27Hw62Ifwrr1DF5ufeGHs6shyFg&oe=6A143952" alt="picture of me!" 
             </figure>
-        </section>
+<h1 class="about-me__info--title">
+Hey! I'm <span class="text-purple"> Anna Grun 👋</span>
+</h1>
+<p class="about-me__info--para">
+    I'm a <strong class="text--purple">frontend Software Engineer</strong>, who cultivates new ideas for beautiful and functional web design.</p>
+   <div class="about-me__link">
+    <a href="#" class="about-me__link">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="#" class="about-me__link">
+        <i class="fab fa-github"></i>
+    </a>
+    <a href="#" class="about-me__link">
+        <i class="fas fa-envelope"></i>
+    </a>
+    <a href="#" class="about-me__link">
+        <i class="fas fa-file-pdf"></i> <!-- Corrected the class here -->
+    </a>
+    <i class="fa-brands fa-square-linkedin"></i>
+</a>
+</div>
+</div>
+<figure class="about-me__img--container">
+    <img src=".assets/undraw_websites.svg" alt=""
+ font-family: "Lato", sans-serif;
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
 
-        <section id="Discord">
-            <h2>Discord</h2>
-            <div class="row">
-                <figure>
-                    <img src="./assets/discord.svg" alt="Discord image">
-                </figure>
-                <div>
-                    <p class="section__description--para">Join our Discord community to connect with other learners and get help with your front-end development journey.</p>
+h1, h2, h3, h4, h5, h6, span {
+    color: #242424;
+    text-align: center;
+    line-height: 1.25;
+}
+
+{
+    font-size: 36px;
+}
+
+p{
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+}
+
+,flex {
+    display;flex 1;
+}
+
+.row {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text--purple {
+    color: #6030b1;
+}
+    
+
+
+    /*NAVIGATION BAR*/
+
+    .nav {
+        height: 100px;
+        width: 100%
+        max-width: 100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.nav__link--list {
+    display: flex;
+}
+
+.nav__link--anchor {
+    margin: 0 12px;
+    color: #242424;
+    text-decoration: none;
+    font-weight: : 700;
+}
+
+
+.nav__link--anchor {
+    display: inline-block; /* Makes it behave like a button */
+    padding: 10px 20px; /* Adds some space inside the button */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 5px; /* Rounds the corners */
+    transition: background-color 0.3s; /* Adds a smooth transition */
+}
+
+.nav__link--anchor:hover {
+    background-color: #0056b3; /* Darkens the button on hover */
+}
+
+
+}
+
+.nav__link--anchor-primary:hover {
+    background-color: #5d3eff;;
+}
+
+.personal__logo{
+    font-size: 24px;
+    color: #6030b1;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+.about-me__picture--mask img {
+    width: 60px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Makes the image circular */
+    align-self: center; /* Centers the image
+}
+
+/* ABOUT ME */
+
+#about -me {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+    
+.about-me__info--container {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+ 
+.about-me__picture--mask {
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    margin-bottom: 28px;
+}
+
+    .about-me__picture {
+        width: 100;
+    }
+
+    /* Improving my own picture */
+    transform: scale(1.5);
+    padding-top: 8px;
+
+    .about-me__info--title{
+        font-size: 28px;
+        margin-bottom: 28;
+    }
+,about-me__info--para {
+    font-size: 28px;
+    margin-bottom: 28px;
+}
+
+.about-me__link {
+    font-size: 20px;
+    color: #242424;
+    text-decoration: none;
+    padding: 0 16px;
+} alt=
+
+</figure>
+               </div>
+            </div>
+            <section>
+                 </div>
+        </body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna's Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/05458313d2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="personal__logo">Anna Grun</div>
+        <ul class="nav__link--list">
+            <li>
+                <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Languages</a>
+            </li>
+            <li>
+                <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Project</a>
+            </li>
+            <li>
+                <a href="#" class="nav__link--anchor nav__link--anchor-primary">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="about-me">
+        <div class="flex flex-1">
+            <div class="about-me__info row">
+                <div class="about-me__info--container">
+                    <figure class="about-me__picture--mask">
+                        <img src="https://scontent-hou1-1.xx.fbcdn.net/v/t39.30808-6/486465074_3716560248595999_446692669170330433_n.jpg" alt="Picture of me!">
+                    </figure>
+                    <h1 class="about-me__info--title">
+                        Hey! I'm <span class="text-purple">Anna Grun 👋</span>
+                    </h1>
+                    <p class="about-me__info--para">
+                        I'm a <strong class="text--purple">frontend Software Engineer</strong>, who cultivates new ideas for beautiful and functional web design.
+                    </p>
+                    <div class="about-me__link">
+                        <a href="#" class="about-me__link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="about-me__link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="about-me__link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="#" class="about-me__link">
+                            <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section id="Contact">
-            <h2>Contact</h2>
-            <form action="">
-                <span>Email</span>
-                <input type="email" placeholder="jane@example.com">
-                <span>Message</span>    
-                <textarea placeholder="Cool website, let's go!"></textarea>
-                <button>Contact us!</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <img class="footer-logo" src="./assets/FES.svg" alt="FES logo">
-        <div class="footer__links">
-            <a href="#about">About</a>
-            <a href="#Discord">Discord</a>
-            <a href="#Contact">Contact</a>
-            <a href="#courses">Courses</a>
-        </div>
-        <p>Copyright Frontend Simplified 2026</p>
-    </footer>
-</body>
+    </body>
 </html>

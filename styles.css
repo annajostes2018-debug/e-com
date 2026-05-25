@@ -1,252 +1,268 @@
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+ font-family: "Lato", sans-serif;
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, span {
+    color: #242424;
+    text-align: center;
+    line-height: 1.25;
+}
+
 {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-font-family: "Play", sans-serif;
-}
-
-nav{
-    height: 70px;
-    display: flex;
-    justiify-content: space-between}
-align-items: center;
-padding: 0 16px;
-background-color: #cafdff;
-}
-
-header {
-    background-color: #eadcff;
-    height: calc(100vh-70px);
-    padding: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-h1 {
-    font-size:72px:
-}
-
-.subheader {
     font-size: 36px;
-    margin: 16px 0 24px 0;
-
 }
 
-button{
-    background-color: #05c7cf;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    font-size: 24px;
-    cursor: pointer;
-}
-a {
-    color: #000;
-    font-size: 24px;
-    font-weight: 700;
-    }
-
-.logo {
-    width: 300px;
+p{
+    line-height: 1.5;
+    font-size: 16px;
 }
 
-ul {
+li {
+    list-style-type: none;
+}
+
+.flex {
     display: flex;
-    }
+}
 
-    li {
-        list-style: none;
-        padding -left: 16px;
-    }
+,flex {
+    display;flex 1;
+}
 
-    .row {
-        wide: 100%;
-        max-width: 1300px;
+.row {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text--purple {
+    color: #6030b1;
+}
+    
+
+
+    /*NAVIGATION BAR*/
+
+    .nav {
+        height: 100px;
+        width: 100%
+        max-width: 100px;
         margin: 0 auto;
-    display: flex;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        justify-content: center;
-        
-    
-        #about, 
-        #discord,
-        #contact {
-            footer
-            padding: 48px 0;
-        }
-    /*
-    
-    ABOUT
-    
-    */
-
-#about{
-    padding: 48px 0;
-    backgroun-color:#f8ffdc;
 }
 
-h2{
-    font-size 60px;
-    text-align: center;
-    margin-bottom: 24px;
-}
-
-.section__description {
+.nav__link--list {
     display: flex;
-    justify-content: center;
+}
+
+.nav__link--anchor {
+    margin: 0 12px;
+    color: #242424;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+.nav__link--anchor {
+    display: inline-block; /* Makes it behave like a button */
+    padding: 10px 20px; /* Adds some space inside the button */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 5px; /* Rounds the corners */
+    transition: background-color 0.3s; /* Adds a smooth transition */
+}
+
+.nav__link--anchor:hover {
+    background-color: #0056b3; /* Darkens the button on hover */
+}
+
+
+}
+
+.nav__link--anchor-primary:hover {
+    background-color: #5d3eff;;
+}
+
+.personal__logo{
+    font-size: 24px;
+    color: #6030b1;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+.about-me__picture--mask img {
+    width: 100px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Makes the image circular */
+    margin: 0 auto; /* center the image */
+    display: block; /* Ensure the image is treated as a block element */
+}
+
+/* ABOUT ME */
+
+#about -me {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+    
+.about-me__info--container {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+ 
+.about-me__picture--mask {
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    margin-bottom: 28px;
+}
+
+    .about-me__picture {
+        width: 100;
+    }
+
+    /* Improving my own picture */
+    transform: scale(1.5);
+    padding-top: 8px;
+
+    .about-me__info--title{
+        font-size: 28px;
+        margin-bottom: 28;
+    }
+,about-me__info--para {
+    font-size: 28px;
+    margin-bottom: 28px;
+}
+
+.about-me__link {
+    font-size: 20px;
+    color: #242424;
+    text-decoration: none;
+    padding: 0 16px;
+}
+* {
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, span {
+    color: #242424;
+    text-align: center;
+    line-height: 1.25;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.row {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text--purple {
+    color: #6030b1;
+}
+
+/* NAVIGATION BAR */
+.nav {
+    height: 100px;
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.about__img--wrapper {
-    width: 40%
-    padding: 0 24px;
+.nav__link--list {
+    display: flex;
 }
 
-img {
-    width: 100%;
+.nav__link--anchor {
+    margin: 0 12px;
+    color: #242424;
+    text-decoration: none;
+    font-weight: 700;
 }
 
-.section__description--wrapper {
-    width: 60%;
-    padding: 0 24px;
+.nav__link--anchor:hover {
+    background-color: #0056b3; /* Darkens the button on hover */
 }
 
-.section__description--para {
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 24px;
+.personal__logo {
+    font-size: 24px;
+    color: #6030b1;
+    margin: 0 12px;
+    font-weight: bold;
 }
 
-/* DISCORD  
-
-*/
-
-#discord {
-background-color: #cefeff;
-}
-
-/*
-
-cCONTACT
-
-*/
-
-#contact {
-    background-color: #f8ffdc;
-   
-}
-
-form {
-    width: 100;
-    max-width: 100%max-width: 500px;
+/* ABOUT ME */
+#about-me {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+.about-me__info--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
     margin: 0 auto;
-    padding: 0 24px;
-    }
-
-    input, textarea {
-        margin-bottom: 24;
-        font-size: 20px;
-        padding: 6px 12 px;
-    }
-
-    /*
-
-    FOOTER
-
-     */
-
-    */
-
-footer {
-    background-color: #aaf5ff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    
-}
-
-,footer__logo {
-    max-width: 480px;
-    margin-bottom: 16px;
-}
-
-.footer__links {
-    margin-bottom: 32px;
-}
-
-.footer__link {
-    padding: 0 16 px;
-}
-/* SMALL PHONES,TABLETS,LARGE SMARTPHONES */
-@media (max-width: 728px) {
-    . row {
-        flex-direction: column;
-    }
-
-    .home__description {
-        margin-bottom: 24px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .home__description--button {
-        
-        max-width: 240px;
-    }
-
-    h1 text-align: center;
-    font-size: 60px;
-}
-
-.subheader
     text-align: center;
-    font-size: 28;
-    }
+}
 
-    ul {
-        display: none;
-    }
+.about-me__picture--mask {
+    width: 100px;
+    height: 100px; /* Use height to maintain aspect ratio */
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    margin-bottom: 28px;
+}
 
-    .section__description {
-        flex-direction: column;
-    }
+.about-me__info--title {
+    font-size: 28px;
+    margin-bottom: 28px;
+}
 
-    .section__description--wrapper {
-        width: 100%;
-        }
+.about-me__info--para {
+    font-size: 18px; /* Adjusted for better readability */
+    margin-bottom: 28px;
+}
 
-    .about__img--wrapper {
-        width: 100%;
-        }
-
-        #discord .sections__description {
-            flex-direction: column-reverse;
-        }
-
-        footer {
-            padding: 48px 24px;
-        }
-
-        .footer__logo {
-            max-width: 360px;
-        }
-
-        .footer__links {
-            padding: 0 4px;
-            font-size: 18px;
-
-            .foorer__links{
-                margin-bottom: 24px;
-            }
-
-        }
-
-
-
-
+.about-me__link {
+    font-size: 20px;
+    color: #242424;
+    text-decoration: none;
+    padding: 0 16px;
+}
