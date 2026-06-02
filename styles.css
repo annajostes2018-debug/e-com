@@ -21,6 +21,20 @@ h1, h2, h3, h4, h5, h6, span {
       list-style-type: none;
       }
 
+      .flex-1 {
+        flex: 1;
+      }
+
+      .flex-1 {
+        flex: 1;
+      }
+
+      .row {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
 /* Navigation Bar */
 
 header.nav {
@@ -32,13 +46,11 @@ header.nav {
   align-items: center;
   padding: 18px 16px;
 }
-.nav__link--list {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
 
+.nav__link--list {
+  display: flex; /* Aligns links in a row */
+  margin-left: auto; /* Pushes the links to the right */
+}
   .nav__link--anchor {
     margin: 0 12px;
     color: #242424;
@@ -62,5 +74,35 @@ header.nav {
       color:#6030b1;
       margin-left: 12px;
       font-weight: bold;
+}
+
+/* ABOUT ME */
+#about-me {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+.about-me__info--container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.about-me__picture--mask {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+overflow: hidden;
+}
+
+.about-me__picture {
+width: 100%;
+
+
+/* Improving my own picture */
+transform: scale(1.5);
+padding-top: 4px;
 }
 
