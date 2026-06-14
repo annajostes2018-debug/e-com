@@ -160,24 +160,80 @@ padding-top: 4px;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: center; /* Centers items if a row isn't full */
-  padding: 25px 16px;
+  justify-content: flex-start; /* Aligns row items properly left-to-right */
+  padding: 25px 0;
 }
 
-/* Target the wrapper/container size of each icon item */
 .language__img {
-  width: 25%;           /* This forces exactly 4 items per row */
-  max-width: 100px;     /* Prevents them from getting too massive */
-  padding: 12px;        /* Adds clean spacing around each icon */
+  width: 25%;         /* Allocates exactly 1/4 of container width */
+  padding: 16px;       /* Gives clean breathing room between elements */
   object-fit: contain;
-  transition: all 300ms ease; /* Fixes your hover animation smoothness */
+  transition: transform 300ms ease, filter 300ms ease, opacity 300ms ease;
 }
 
 .language__img:hover {
   filter: brightness(80%);
   opacity: 0.86;
+  transform: scale(0.9);
+}
+
+.language:hover {
+  filter: brightness(80%);
+  opacity: 0.86;
   transform: scale(0.9); /* Changed 'transition: scale' to 'transform: scale' */
 }
+
+.language__name {
+  position:absolute;
+  bottom: 0;
+  transform: scale(0);
+  transition: all 300ms;
+  font-size: 20px;
+  opacity: 0;
+}
  
+.language: hover .language__name {
+  transform: scale(1);
+  opacity: 1;
+}
 
+/* PROJECTS */
 
+.project__img {
+  width: 100%;
+  transition: all 500ms ease;
+  }
+
+.project__wrapper {
+  display: flex;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.project__wrapper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+ height: 100%;
+ width: 100%;
+ background-color: #1c1d25;
+ opacity: 0;
+ transition: opacity 450ms ease;
+ z-index: 2;
+}
+
+.project:hover .project__wrapper:before {
+  opacity: 0.7;
+}
+
+.project:hover .project__img {
+  transform: scale(1.07);
+  filter: blur(5px);
+}
+
+.project__list {
+  padding-top: 40px;
+}
