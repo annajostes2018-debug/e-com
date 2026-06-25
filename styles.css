@@ -426,14 +426,35 @@ h1 {
   .nav__link:not(:last-chid) {
     display: none;
   }
-}
+
+    .project__description--para {
+      display: none;
+    }
+
+    .project__description {
+      padding: 0;
+      left: 0;
+      width: 100%;
+    }
+
+  
 
 .project__description--para {
+  display: none;
+}
+
+.project__description--links {
   display: flex;
   justify-content: center;
 }
 
-.project__description--sub-title {
+.project__description--title {
+  font-size: 32px;
+  line-height: 1;
   text-align: center;
 }
 
+.project__description--title {
+  text-align: center;
+  margin: 12 0;
+}
