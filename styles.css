@@ -169,7 +169,20 @@ border-radius: 50%;
 overflow: hidden;
 box-shadow: 0 18px 160 px rgba(0, 0, 0, 16);
 margin-bottom: 28px;
+animation: animate-profile-picture 800ms 1s backwards;
+padding: 8px;
 }
+
+@keyframes animate-profile-picture {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale (1.1);
+  }
+  100% {
+    transform: scale (1);
+  }
 
 .about-me__picture {
 width: 100%; 
@@ -422,24 +435,27 @@ h1 {
 }
 
 /* SMALL PHONE */
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .nav__link:not(:last-chid) {
     display: none;
+  }
+
+  .project__description {
+    padding: 0;
+    left: 0;
+    width: 100%;
   }
 
     .project__description--para {
       display: none;
     }
 
-    .project__description {
-      padding: 0;
-      left: 0;
-      width: 100%;
+    .project__description--links {
+      display: flex;
+      justify-content: center;
     }
 
-  
-
-.project__description--para {
+  .project__description--para {
   display: none;
 }
 
@@ -449,12 +465,12 @@ h1 {
 }
 
 .project__description--title {
-  font-size: 32px;
+  font-size:  32px;
   line-height: 1;
   text-align: center;
 }
 
-.project__description--title {
+.project__description--sub-title {
   text-align: center;
-  margin: 12 0;
+  margin: 12px; 0;
 }
