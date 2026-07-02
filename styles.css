@@ -282,6 +282,17 @@ animation: fade-in  1200ms 800ms backwards;
 
 /* TECH - STACK */
 
+.tech-stack {
+    display: flex;              /* Enables flexbox layout */
+    flex-direction: row;       /* Ensures items are in a row */
+    justify-content: space-around; /* Optional: space items evenly */
+}
+
+.tech-item {
+    margin: 0 10px;           /* Optional: adds space between items */
+    padding: 10px;            /* Optional: adds space inside each item */
+    border: 1px solid #ccc;   /* Optional: adds a border for visibility */
+}
 
 
 .language__list {
