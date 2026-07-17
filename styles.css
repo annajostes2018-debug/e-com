@@ -12,11 +12,16 @@ nav {
 }
 
 img {
+    width: 100%;
+}
+
+img {
     margin-top: 12px;
     width: 100%;
-    height: 100%
+    height: 100%;
     max-height: 50vh;
     padding: 20px;
+    margin-bottom: 52px;
 }
 
 .nav__container {
@@ -70,7 +75,7 @@ img {
 
 
     #landing {
-        background-color: rgba (115, 66, 214, 0.1)
+        background-color: rgba(115, 66, 214, 0.1)
     }
 
     header {
@@ -122,6 +127,7 @@ img {
         color: #fff;
         padding: 12px 24px;
         font-size: 20px;
+        text-decoration: none;
         border-radius: 4px;
         border: none;
         max-width: 200px;
@@ -143,10 +149,49 @@ img {
         margin: 0 auto;
     }
 /*
-
-HIGHLIGHTS
+HIGHLIGHTS 
 
 */
+
+#highlights {
+    position: relative; /* This is important for the absolute positioning of the pseudo-element */
+}
+
+#highlights:before {
+    content: ""; /* Ensures the pseudo-element is created */
+    background: url('assets/assets/wave.svg'); /* Ensure this path is correct */
+    position: absolute; /* Position it absolutely within the #highlights section */
+    width: 101vw; /* Use viewport width to stretch across the screen */
+    height: 12vw; /* Adjust height as needed */
+    left: 0; /* Align to the left */
+    top: 1px; /* Position it slightly down */
+    z-index: 1; /* Ensure it’s behind the content */
+    background-size: cover; /* Make the background image cover the entire area */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    transform: translateY(-100%); /* Move it up */
+}
+
+
+
+
+#highlights:after {
+    content: "";
+    background: url('assets/assets/wave.svg');
+    position: absolute;
+    width: 101vw;
+    height: 12vw;
+    left: 0;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+#highlights:before {
+  transform: translateY(-100%);
+  top: 1px;
+}
 
 .highlight__wrapper {
     display: flex;
@@ -163,21 +208,32 @@ HIGHLIGHTS
 
 .highlight__para {
     text-align: center;
+    max-width: 280px;
 }
 
 .highlight__img {
-    border: 2px solid #7342d6;
+    border: 2px solid #7342d65d;
     width: 100px;
 height: 100px;
 display: flex;
 align-items: center;
 justify-content: center;
 border-radius: 4px;
+font-size: 32px;
+margin-bottom: 24px;
 }
 
+.highlights__wrapper {
+    display: flex;               /* Enable flexbox */
+    flex-direction: row;        /* Arrange items in a row */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center;        /* Center items vertically */
+}
+
+
 svg {
-    width: 28px; /* Adjust size */
-    height: 28px; /* Adjust size */
+    width: 32px; /* Adjust size */
+    height: 32px; /* Adjust size */
     fill: #7342d6; /* Change color */
 }
 
