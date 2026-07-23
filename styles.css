@@ -251,10 +251,7 @@ svg {
     background-color: rgba(115, 66, 214, 0.1);
     }
 
-.book-image {
-    position: relative; /* Ensure it's positioned properly */
-    z-index: 2; /* This should be higher than the wave */
-}
+
 
 
 
