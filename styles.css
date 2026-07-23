@@ -16,12 +16,12 @@ img {
 }
 
 img {
-    margin-top: 12px;
+    margin-top: 4px;
     width: 100%;
     height: 100%;
     max-height: 50vh;
     padding: 20px;
-    margin-bottom: 52px;
+    margin-bottom: 44px;
 }
 
 .nav__container {
@@ -137,6 +137,8 @@ img {
 
     .header__img--wrapper {
        padding: 20px;
+       z-index: 2;
+
     }
 
     .container {
@@ -155,19 +157,19 @@ HIGHLIGHTS
 
 #highlights {
     position: relative; /* This is important for the absolute positioning of the pseudo-element */
+    max-width: 100vw;
 }
 
 #highlights:before {
-    content: ""; /* Ensures the pseudo-element is created */
-    background: url('assets/assets/wave.svg'); /* Ensure this path is correct */
-    position: absolute; /* Position it absolutely within the #highlights section */
-    width: 101vw; /* Use viewport width to stretch across the screen */
-    height: 12vw; /* Adjust height as needed */
-    left: 0; /* Align to the left */
-    top: 1px; /* Position it slightly down */
-    z-index: 1; /* Ensure it’s behind the content */
-    background-size: cover; /* Make the background image cover the entire area */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background: url('assets/wave.svg');
+    content: "";
+    position: absolute;
+    width: 101vw; /* Keep this to stretch across the viewport */
+    height: 6vw; /* Try reducing this value */
+    top: 1px; /* Adjust this if needed */
+    z-index: 1; /* Ensure it's behind other content */
+    background-size: cover; /* This makes sure it scales correctly */
+    background-repeat: no-repeat; /* Prevents tiling */
     transform: translateY(-100%); /* Move it up */
 }
 
@@ -180,10 +182,12 @@ HIGHLIGHTS
     position: absolute;
     width: 101vw;
     height: 12vw;
+    bottom: 1px;
     left: 0;
     z-index: 1;
     background-size: cover;
     background-repeat: no-repeat;
+    transform: translateY(100%) rotate(180deg); /* Move it down and flip it */
 }
 
 
@@ -223,6 +227,11 @@ font-size: 32px;
 margin-bottom: 24px;
 }
 
+.highlight_subtitle {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
 .highlights__wrapper {
     display: flex;               /* Enable flexbox */
     flex-direction: row;        /* Arrange items in a row */
@@ -232,12 +241,20 @@ margin-bottom: 24px;
 
 
 svg {
-    width: 32px; /* Adjust size */
-    height: 32px; /* Adjust size */
+    width: 24px; /* Adjust size */
+    height: 24px; /* Adjust size */
     fill: #7342d6; /* Change color */
 }
 
+#features {
+    height: 100px;
+    background-color: rgba(115, 66, 214, 0.1);
+    }
 
+.book-image {
+    position: relative; /* Ensure it's positioned properly */
+    z-index: 2; /* This should be higher than the wave */
+}
 
 
 
