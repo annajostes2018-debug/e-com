@@ -161,11 +161,11 @@ HIGHLIGHTS
 }
 
 #highlights:before {
-    background: url('assets/wave.svg');
+    background: url('assets/assets/wave.svg');
     content: "";
     position: absolute;
     width: 101vw; /* Keep this to stretch across the viewport */
-    height: 6vw; /* Try reducing this value */
+    height: 12vw; /* Try reducing this value */
     top: 1px; /* Adjust this if needed */
     z-index: 1; /* Ensure it's behind other content */
     background-size: cover; /* This makes sure it scales correctly */
@@ -249,6 +249,22 @@ svg {
 #features {
     height: 100px;
     background-color: rgba(115, 66, 214, 0.1);
+    }
+
+  .books {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.book {
+    width: 25%;
+    padding: 24px;
+}
+
+    .book__img {
+        max-height: 300px;
     }
 
 
