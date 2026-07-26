@@ -247,16 +247,13 @@ svg {
 }
 
 #features {
-    height: 100px;
+    padding-top: 8vw;
     background-color: rgba(115, 66, 214, 0.1);
     }
 
   .books {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Allow wrapping */
-}
+  }
 
 .book {
     width: 25%;
@@ -265,6 +262,16 @@ svg {
 
     .book__img {
         max-height: 300px;
+    }
+
+    .book__img--wrapper {
+        margin-bottom; 8px;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .book:hover .book__img {
+        transform: scale(1.03);
     }
 
 
