@@ -89,6 +89,60 @@ img {
     text-decoration: none;
 }
 
+.btn__menu {
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    color: #7342b6;
+}
+
+.menu__backdrop {
+    position: absolute;
+    background-color: 242424;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    /* display: flex; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.menu--open .menu__backdrop
+display: flex;
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__list {
+    padding: 32px 0;
+}
+
+.menu__link {
+    color: white
+}
+
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: white;
+}
+
+/* 
+
+Landing
+
+*/
+
 
     #landing {
         background-color: rgba(115, 66, 214, 0.1)
@@ -265,13 +319,6 @@ margin-bottom: 24px;
     align-items: center;        /* Center items vertically */
 }
 
-
-svg {
-    width: 24px; /* Adjust size */
-    height: 24px; /* Adjust size */
-    fill: #7342d6; /* Change color */
-}
-
 #featured {
     padding-top: 8vw;
     background-color: rgba(115, 66, 214, 0.1);
@@ -374,9 +421,13 @@ svg {
 
     .footer__link {
         padding: 0 8px;
-
     }
 
+    @media (max-width: 550px) {
+        .nav__links {
+            display: none;
+        }
+    
 
 
 
